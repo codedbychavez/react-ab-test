@@ -12,6 +12,11 @@ function App() {
   // Initialize Amplitude
   const AmplitudeInstance = amplitude.getInstance().init("71b8a9d6b70f4f483351c4c200f5f1f4");
 
+  // Mimic a unique userId
+  const UserId = 5697;
+  amplitude.getInstance(AmplitudeInstance).setUserId(UserId);
+
+  // This value can change based on a feature flag configured on ConfigCat.
   const DiscountAmount = "20%"
 
   const handleClick = () => {
