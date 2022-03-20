@@ -3,12 +3,19 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 
+// Amplitude JS
+import amplitude from 'amplitude-js';
+
 import CartPlusIcon from "./components/CartPlusIcon";
 
 function App() {
+  // Initialize Amplitude
+  const AmplitudeInstance = amplitude.getInstance().init("71b8a9d6b70f4f483351c4c200f5f1f4");
+
   const DiscountAmount = "20%"
 
   const handleClick = () => {
+    amplitude.getInstance(AmplitudeInstance).logEvent("Shop Now");
     console.log("Clicked");
   }
 
