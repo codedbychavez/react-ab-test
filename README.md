@@ -21,7 +21,11 @@ It's worth noting that [ConfigCat’s](https://configcat.com/) feature flag serv
 
 Read the article to learn more!
 
+## How to run this app?
+1. Clone this repository
+2. Run `npm install` to install the app dependencies 
+3. Run `npm install` to run the app locally.
+4. Thats it!
+
 ## What it looks like in the browser:
 ![image](https://user-images.githubusercontent.com/74829200/159141452-f9070379-9306-46c7-8809-15c3d829dd9a.png)
-
-
