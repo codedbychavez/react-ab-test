@@ -12,7 +12,7 @@ function App() {
   // Initialize Amplitude
   const AmplitudeInstance = amplitude.getInstance().init("71b8a9d6b70f4f483351c4c200f5f1f4");
 
-  // Mimic a unique userId
+  // Mimic a unique UserId
   const UserId = 5697;
   amplitude.getInstance(AmplitudeInstance).setUserId(UserId);
 
@@ -20,8 +20,8 @@ function App() {
   const DiscountAmount = "20%"
 
   const handleClick = () => {
+    // Logging clicks to Amplitude
     amplitude.getInstance(AmplitudeInstance).logEvent("Shop Now");
-    console.log("Clicked");
   }
 
   return (
